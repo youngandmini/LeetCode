@@ -1,8 +1,5 @@
 class Solution:
     def longestConsecutive(self, nums: List[int]) -> int:
-        import sys
-        min_num = sys.maxsize
-        max_num = -sys.maxsize
         
         num_map = {}
         
