@@ -2,7 +2,9 @@ class Solution:
     def maxArea(self, height: List[int]) -> int:
         
         #일단 투포인터로 풀긴 했는데, 이게 과연 맞을까?
-        #둘중 더 작은놈을 땡기는 것
+        #둘중 키가 더 작은놈을 땡기는 것
+        #그렇게 했을 때, 어쨋든 오른쪽에서 가장 키 큰놈과 왼쪽에서 가장 키큰놈끼리 매칭이 될 것 같긴 한데...
+        #반례는 없을까??
         n = len(height)
         
         front_index = 0
