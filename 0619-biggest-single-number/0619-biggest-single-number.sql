@@ -20,14 +20,8 @@
 # from dual;
 
 
-select num from 
-(select num
-from MyNumbers
+select max(a.num) as num
+from
+(select * from MyNumbers
 group by num
-having count(num) <= 1
-order by num desc) as a
-union
-(select null)
-
-limit 1
-
+having count(num) <= 1) as a
