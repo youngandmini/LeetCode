@@ -4,4 +4,4 @@ select *
 from Patients 
 where conditions like 'DIAB1%'
 or
-conditions REGEXP " DIAB1"
+conditions REGEXP ' DIAB1'
